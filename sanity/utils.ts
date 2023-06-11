@@ -1,10 +1,11 @@
+import { Project } from '@/types/Project'
 import { createClient, groq } from 'next-sanity'
 
-export const getProjects = async () => {
+export const getProjects = async (): Promise<Project[]> => {
   const client = createClient({
     projectId: `${process.env.NEXT_PUBLIC_SANITY_PROJECTID}`,
     dataset: 'production',
-    apiVersion: '2023-06-10'
+    apiVersion: '2023-06-11'
   })
 
   return client.fetch(
