@@ -5,8 +5,8 @@ import Link from 'next/link'
 const Home = async () => {
   const projects = await getProjects()
   return (
-    <div className='max-w-5xl mx-auto'>
-      <h1 className='text-9xl font-extrabold text-center pt-20'>Hello! I am 
+    <div>
+      <h1 className='text-8xl font-extrabold text-center'>Hello! I am 
         <span className='bg-gradient-to-r 
           from-blue-300 
           to-blue-300 

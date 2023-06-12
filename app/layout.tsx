@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Rajdhani } from 'next/font/google'
 
@@ -18,7 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={rajdhani.className}>{children}</body>
+      <body className={`${rajdhani.className} max-w-3xl mx-auto py-10`}>
+      <header>
+        <Link href='/' className='bg-gradient-to-r 
+          from-blue-300 
+          to-blue-300 
+          bg-clip-text 
+          text-transparent text-2xl font-bold'>
+          iRAH
+        </Link>
+      </header>
+      <main className='py-20'>{children}</main>
+      </body>
     </html>
   )
 }
