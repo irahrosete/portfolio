@@ -6,7 +6,7 @@ const Home = async () => {
   const projects = await getProjects()
   return (
     <div>
-      <h1 className='text-8xl font-extrabold text-center'>Hello! I am 
+      <h1 className='text-8xl font-extrabold text-center'>Hello! <br /> I am 
         <span className='bg-gradient-to-r 
           from-blue-300 
           to-blue-300 
