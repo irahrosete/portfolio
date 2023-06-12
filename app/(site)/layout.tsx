@@ -27,7 +27,7 @@ export default async function RootLayout({
       <body className={`${rajdhani.className} max-w-3xl mx-auto py-10`}>
       <header className='flex items-center justify-between'>
         <Link href='/'>
-          <Image src='/../public/irah-logo.png' alt='logo' width={50} height={50}/>
+          <Image src='/irah-logo.png' alt='logo' width={50} height={50}/>
         </Link>
         <div className='flex items-center gap-5'>
           {pages.map((page) => (
