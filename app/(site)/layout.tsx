@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import './globals.css'
+import '../globals.css'
 import { Rajdhani } from 'next/font/google'
 
 const rajdhani = Rajdhani({
